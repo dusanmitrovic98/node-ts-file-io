@@ -1,0 +1,26 @@
+import fs from 'fs';
+
+// Read file
+function readFile(filePath: string): string {
+  return fs.readFileSync(filePath, 'utf8');
+}
+
+// Write file
+function writeFile(filePath: string, content: string): void {
+  fs.writeFileSync(filePath, content);
+}
+
+// Example usage
+const inputFile = 'input.txt';
+const outputFile = 'output.txt';
+
+// Read input file
+const fileContent = readFile(inputFile);
+console.log('File content:', fileContent);
+
+// Modify content
+const modifiedContent = fileContent.toUpperCase();
+
+// Write output file
+writeFile(outputFile, modifiedContent);
+console.log('Output file created:', outputFile);
