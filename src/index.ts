@@ -21,5 +21,5 @@ console.log(array);
 let array2 = readFileLines(inputFile, 1, 5);
 console.log(array2);
 
-let array3 = readFileLines(inputFile, 22);
+let array3 = readFileLines(inputFile, 1, 10);
 console.log(array3);
