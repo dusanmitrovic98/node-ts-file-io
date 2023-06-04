@@ -23,3 +23,5 @@ console.log(array2);
 
 let array3 = readFileLines(inputFile, 1, 10);
 console.log(array3);
+
+// todo needed example for appendFile method
