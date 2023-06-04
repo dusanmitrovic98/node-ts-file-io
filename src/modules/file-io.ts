@@ -21,6 +21,10 @@ export function readFileLines(
   return lines;
 }
 
+export function writeFile(filePath: string, content: string): void {
+  fs.writeFileSync(filePath, content);
+}
+
 export function appendFile(filePath: string, content: string): void {
   fs.appendFileSync(filePath, content);
 }
